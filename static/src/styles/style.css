@@ -37,7 +37,7 @@ body {
 	color: #031e23;
 	width: 100%;
 	height: 100%;
-	background: #ecf0f4;
+	background: #ffffff;
 }
 a {
 	outline: none;
@@ -560,13 +560,9 @@ textarea.form-control{
     background-color: #fff;
     padding: 20px;
     border-radius: 20px;
-    position: relative;
-    left: 70px;
+    left: 50px;
   }
-  body{
-    background-color: #fff;
-    justify-content:center;
-  }
+
   
   .title {
     font-size: 38px;
@@ -673,48 +669,32 @@ textarea.form-control{
     }
   }
 
-.reg_img{
-    
-position:relative;
-left: 60px;
-height: 450px;
-width: 550px;
-top: 180px; 
-
-}
-#reg_img{
+  .reg_img {
     height: 450px;
-    width: 450px;
-    position: relative;
-    top: 20px;
-    margin: auto;
-    left:85px;
+    width: 550px;
+    margin-top: 80px;
+  }
 
-}
+
 .reg_main{
-	display: flex;
-	position: absolute;
-	justify-content: center;
-	
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 95px;
 }
 
 @media (max-width: 768px) {
 	.reg_img{
 	  display: none;
 	}
-	.form{
-		position: absolute;
+	.form {
+		display: flex;
+		flex-direction: column;
 		gap: 8px;
 		max-width: 350px;
 		background-color: #fff;
 		padding: 20px;
 		border-radius: 20px;
-		
-	}
-	.reg_main{
-	position: absolute;
-	
-  	
 	}
   }
   
@@ -1303,10 +1283,9 @@ table.dataTable.dtr-inline.collapsed>tbody>tr.parent>td:first-child:before, tabl
 	padding: 5px 0;
 	font-size: 16px;
 }
-
 .user-info-dropdown .dropdown-toggle .user-icon{
-	width: 45px;
-	height: 45px;
+	width: 52px;
+	height: 52px;
 	font-size: 24px;
 	background: #ebeff3;
 	color: #1b00ff;
@@ -1321,7 +1300,6 @@ table.dataTable.dtr-inline.collapsed>tbody>tr.parent>td:first-child:before, tabl
 	-moz-box-shadow: 0px 0px 10px rgba(0, 0, 0, .18);
 	box-shadow: 0px 0px 10px rgba(0, 0, 0, .18);
 }
-
 .user-info-dropdown .dropdown-toggle .user-icon img{
 	-webkit-border-radius: 100%;
 	-moz-border-radius: 100%;
@@ -1981,7 +1959,7 @@ body.IE .register-page-wrap .container{
 /*==============================================================
 	Register Page Start
 ==============================================================*/
-.register-page-wrap{
+/* .register-page-wrap{
 	position: relative;
 	height: calc(100% - 70px);
 	overflow: auto;
@@ -2022,10 +2000,10 @@ body.IE .register-page-wrap .container{
 }
 .register-page-wrap .wizard-content .wizard.wizard-circle>.steps>ul>li:after,
 .register-page-wrap .wizard-content .wizard.wizard-circle>.steps>ul>li:before{
-	/*display: none;*/
+	
 	background: rgba(24, 31, 72, .3);
-}
-.wizard-content .wizard.wizard-circle>.steps>ul>li.current~li:before,
+} */
+/* .wizard-content .wizard.wizard-circle>.steps>ul>li.current~li:before,
 .wizard-content .wizard.wizard-circle>.steps>ul>li.current~li:after{
 	background: rgba(24, 31, 72, .3);
 }
@@ -2085,7 +2063,7 @@ body.IE .register-page-wrap .container{
 .register-info li{
 	margin-bottom: 15px;
 	font-size: 14px;
-}
+} */
 /*.register-page-wrap .wizard-content .wizard > .content > .body.current{
 	-webkit-transform: translate(0px, 0px);
 	-moz-transform: translate(0px, 0px);
