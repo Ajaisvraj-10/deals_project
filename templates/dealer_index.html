@@ -6,7 +6,7 @@
 	<head>
 		<!-- Basic Page Info -->
 		<meta charset="utf-8" />
-		<title> Admin Dashboard</title>
+	<title> Dealer Dashboard</title>
 
 		<!-- Site favicon -->
 		<link
@@ -273,7 +273,7 @@
 							<span class="user-icon">
 								<img src="{% static 'src/images/aadd6bf4-9008-4e27-a612-3e2cec34aa60.jpg' %}" alt="" />
 							</span>
-							<span class="user-name">Super-Admin</span>
+							<span class="user-name">Ross C. Lopez</span>
 						</a>
 						<div
 							class="dropdown-menu dropdown-menu-right dropdown-menu-icon-list"
@@ -749,7 +749,7 @@
 								<div class="widget-data">
 									<div class="weight-700 font-24 text-dark">400+</div>
 									<div class="font-14 text-secondary weight-500">
-										Registered users
+										Total Doctor
 									</div>
 								</div>
 								<div class="widget-icon">
@@ -1055,8 +1055,8 @@
 				</div> -->
 
 				<div class="card-box pb-10">
-					<div class="h5 pd-20 mb-0">Recent users</div>
-					<table class="data-table table nowrap">
+					<div class="h5 pd-20 mb-0">Recent Patient</div>
+					<table class="data-table table  ">
 						<thead>
 							<tr>
 								<th>Number</th>
@@ -1069,10 +1069,7 @@
 							</tr>
 						</thead>
 						<tbody>
-							{% for userdata in userdatas %}
-						
-							
-							
+							{% for userdata in userdatas %}   							
 							<tr>
 								<td>
 									{{ forloop.counter }}.

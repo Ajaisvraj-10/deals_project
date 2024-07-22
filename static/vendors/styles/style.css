@@ -465,7 +465,7 @@ p {
 .text-green {
   color: #46be8a;
 }
-.text-orange-50F {
+.text-orange-50 {
   color: #f2a654;
 }
 .text-blue-50 {
@@ -579,7 +579,7 @@ p {
   vertical-align: unset;
   width: auto;
   height: auto;
-  fborder: 0 !important;
+  border: 0 !important;
 }
 .bootstrap-select .dropdown-toggle::after {
   position: absolute;
@@ -1335,8 +1335,8 @@ table.dataTable.dtr-inline.collapsed
   font-size: 16px;
 }
 .user-info-dropdown .dropdown-toggle .user-icon {
-  width: 45px;
-  height: 45px;
+  width: 52px;
+  height: 52px;
   font-size: 24px;
   background: #ebeff3;
   color: #1b00ff;
@@ -4278,4 +4278,58 @@ body.IE .register-page-wrap .container {
   .register-page-wrap .wizard-content .wizard .steps {
     display: none;
   }
+}
+
+/* ###for  add fields ////////////////////// */
+
+.sec_add_fields{
+  max-width: 600px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  margin: auto;
+}
+.form-group {
+  margin-bottom: 20px;
+}
+.form-group label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 8px;
+}
+.form-group input[type=text], 
+.form-group textarea {
+  width: 100%;
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+.form-group input[type=file] {
+  margin-top: 4px;
+}
+.form-group .time-inputs {
+  display: flex;
+  gap: 10px;
+}
+.form-group .time-inputs input {
+  flex: 1;
+}
+.form-group .file-label {
+  margin-top: 8px;
+  display: block;
+}
+.form-group button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+.form-group button:hover {
+  background-color: #45a049;
 }

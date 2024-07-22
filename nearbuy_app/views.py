@@ -2,10 +2,13 @@ from django.shortcuts import render,redirect
 from django.contrib.auth.models import User
 from django.http import HttpResponse
 from nearbuy_app.models import*
+
 # from django.core.mail import send_mail
+
 from django.contrib.auth import authenticate,login as auth_login,logout,login
 from django.contrib.auth.decorators import login_required
 # Create your views here.
+
 
 @login_required
 def admin_index(request):
@@ -41,12 +44,13 @@ def admin_register(request):
             else:
                  #create a new user
                  
-                user=User.objects.create_user(first_name=first_name,
-                                          last_name=last_name,
-                                          email=email,
-                                          password=password,
-                                          username=user_name
-                                          )
+                user=User.objects.create_user(
+                    first_name=first_name,
+                    last_name=last_name,
+                    email=email,
+                    password=password,
+                    username=user_name
+                    )
 
                 user.save()
 
@@ -57,7 +61,6 @@ def admin_register(request):
                 auth_login(request, user)
                 return redirect('admin_login')
            
-
     else:
         print('not registered')
         return render(request,'admin_register.html')    
@@ -83,11 +86,10 @@ def admin_login(request):
 
 #forgot password///////
 
-def forgot_password(request):
 
+def forgot_password(request):
     return render(request,'password_reset_done.html')
 
-    
     #logout
 
 def admin_logout(request):

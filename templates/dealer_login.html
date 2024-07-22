@@ -5,7 +5,7 @@
 	<head>
 		<!-- Basic Page Info -->
 		<meta charset="utf-8" />
-		<title>Admin Dashboard</title>
+		<title>Dealer Dashboard</title>
 
 		<!-- Site favicon -->
 		<link
@@ -93,7 +93,7 @@
 				</div>
 				<div class="login-menu">
 					<ul>
-						<li><a href="{%url 'admin_register' %}">Register</a></li>
+						<li><a href="{%url 'deal_register' %}">Dealer_Register</a></li>
 					</ul>
 				</div>
 			</div>
@@ -111,7 +111,7 @@
 							<div class="login-title">
 								<h2 class="text-center text-primary">Login To DeskApp</h2>
 							</div>
-							<form class="form" action="{% url 'admin_login' %}" method="post">
+							<form class="form" action="{% url 'dealer_login' %}" method="post">
 								{% csrf_token %}
 								
 								{% comment %} add names for username and password {% endcomment %}
@@ -156,7 +156,7 @@
 									</div>
 									<div class="col-6">
 										<div class="forgot-password">
-											<a href=  >Forgot Password</a>
+											{% comment %} <a href= {% url 'password_reset' %} >Forgot Password</a> {% endcomment %}
 										</div>
 									</div>
 								</div>
@@ -175,7 +175,7 @@
 										<div class="input-group mb-0">
 											<a
 												class="btn btn-outline-primary btn-lg btn-block"
-												href="{%url 'admin_register' %}"
+												href="{%url 'deal_register' %}"
 												>Register To Create Account</a
 											>
 										</div>
